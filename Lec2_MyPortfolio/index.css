@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI';
+  }
+  .nav {
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+  }
+  .nav > .nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+  }
+  .nav > .nav-header > .nav-title {
+    font-size: 22px;
+    color: #fff;
+  }
+  .nav > .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav > .nav-list > li {
+    list-style-type: none;
+  }
+  .nav > .nav-list > li a {
+    text-decoration: none;
+    color: #efefef;
+    cursor: pointer;
+  }
+  .nav > #nav-check {
+      display: none;
+  }
+  @media (max-width: 480px) {
+    .nav {
+      padding: 1rem;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-top: 0.2rem;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-list {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      background-color: blueviolet;
+      height: 0;
+      transition: all 0.3s ease-in;
+      top: 40px;
+      left: 0;
+      overflow: hidden;
+    }
+    .nav > .nav-list > li {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+    .nav > #nav-check:checked ~ .nav-list {
+      height: calc(100vh - 50px);
+    }
+  }
+
+             /* body  */
+
+.body-container{
+    border: solid 2px #0C4F4F;
+    padding: 20px;
+}
+.myprofile-container{
+    /* border: solid 2px red; */
+    display: flex;
+    padding: 20px;
+    /* gap: 10px; */
+    justify-content: space-evenly;
+}
+.des-container{
+    /* border: solid 2px purple; */
+    height: 450px;
+    width: 45%;
+    padding: 10px ;
+    align-content: center;
+}
+
+.profile-img-container{
+    /* border: solid 2px blue; */
+    /* border-radius: 79%; */
+    /* border-width: 80%; */
+    height: 450px;
+    width: 35%;
+    padding: 10px ;
+    text-align: center;
+}
+
+.h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.intro{
+    /* font-family:Caveat; */
+    margin: 0;
+}
+.name{
+    color: blueviolet;
+}
+.port-img{
+    width: 80%;
+    height: 100%;
+    border-radius: 45% 55% 30% 70% / 55% 60% 40% 45%;
+}
+
+
+/* footer */
+.footer-container{
+    /* border: solid 2px palegreen; */
+    padding: 25px 50px 0 50px;
+    background-color: blueviolet;
+    min-height: 200px;
+}
+.footer-body{
+    /* border: solid 2px paleturquoise; */
+    padding: 10px;
+}
+
+.footer-body h1{
+  margin-bottom: 0px;
+  color:#C3DFDF;
+  font-family: sans-serif;
+}
+
+.footer-media{
+    /* border: solid 2px palevioletred; */
+    color: #eee;
+    text-align: center;
+    padding: 10px;
+    /* display: ; */
+}
+.icon{padding-left: 40px;}
+.footer-task{
+  /* border: solid 2px papayawhip; */
+   padding: 20px;
+   text-align: center;
+   font-family: sans-serif;
+   font-size: 20px;
+   margin: 20px;
+}
+.footer-task a{
+  text-decoration: none;
+}
+.task-tag:hover{
+  /* text-shadow: 0 0 5px #B6F8F8; */
+  color: bisque;
+}
+.task-tag{
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+.copyright-component{
+  color:white;
+  border-top: solid 2px blueviolet;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+.myprofile-container{
+  display: flex;
+  flex-direction: column;
+}
+.des-container,.profile-img-container{
+  width: 100%;
+}
+
+}
