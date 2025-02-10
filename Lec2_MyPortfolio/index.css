@@ -123,7 +123,8 @@
 .port-img{
     width: 80%;
     height: 100%;
-    border-radius: 45% 55% 30% 70% / 55% 60% 40% 45%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px blueviolet,-4px -4px 4px blueviolet;
 }
 
 
