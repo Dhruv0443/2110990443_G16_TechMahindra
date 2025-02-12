@@ -1,4 +1,4 @@
-// Important Case of CLOSURES-----------its main cause is data hiding and encapsulation
+// !Important Case of CLOSURES-----------its main cause is data hiding and encapsulation
 
 // var count=0;
 
