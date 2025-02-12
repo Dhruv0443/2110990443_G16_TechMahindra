@@ -40,6 +40,29 @@
 // counter1();
 // counter1();
 
+// function two() {
+//   return 2;
+// }
+
+// function four() {
+//   return 4;
+// }
+
+// console.log(1);
+// console.log(two());
+
+// setInterval(() => {
+//   console.log(3);
+// }, 3000);
+
+// console.log(four());
+
+// setInterval(() => {
+//   console.log(5);
+// }, 5000);
+
+// console.log(6);
+
 //Do increment and decrement with this keyword
 
 function Counter(){
